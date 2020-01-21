@@ -1,0 +1,10 @@
+@import 'variables';
+// Set Text Color
+
+@function set-text-color($color) {
+   @if(lightness($color) >50) {
+      @return $dark-color;
+   } @else {
+      @return $medium-color;
+   }
+}
